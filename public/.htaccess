@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # La ruta del inventario coincide con la carpeta que contiene sus imágenes.
+    # Enviar ambas variantes de la URL al front controller evita que Apache
+    # intente abrir el directorio físico public/productos.
+    RewriteRule ^productos/?$ index.php [END]
+    # La carpeta física de imágenes de servicios colisiona con la ruta /servicios.
+    # Enrutar solo la raíz al front controller mantiene accesibles los archivos dentro.
+    RewriteRule ^servicios/?$ index.php [END]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

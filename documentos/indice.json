@@ -1,0 +1,107 @@
+[
+  {
+    "hu": "HU01",
+    "title": "Iniciar sesión y acceder según el rol",
+    "file": "hu01_iniciar_sesion_y_acceder_segun_el_rol.svg"
+  },
+  {
+    "hu": "HU02",
+    "title": "Gestionar usuarios del sistema",
+    "file": "hu02_gestionar_usuarios_del_sistema.svg"
+  },
+  {
+    "hu": "HU03",
+    "title": "Administrar perfil",
+    "file": "hu03_administrar_perfil.svg"
+  },
+  {
+    "hu": "HU04",
+    "title": "Panel administrativo y calendario",
+    "file": "hu04_panel_administrativo_y_calendario.svg"
+  },
+  {
+    "hu": "HU05",
+    "title": "Agenda y atenciones asignadas",
+    "file": "hu05_agenda_y_atenciones_asignadas.svg"
+  },
+  {
+    "hu": "HU06",
+    "title": "Gestionar clientes",
+    "file": "hu06_gestionar_clientes.svg"
+  },
+  {
+    "hu": "HU07",
+    "title": "Consultar historial de clientes",
+    "file": "hu07_consultar_historial_de_clientes.svg"
+  },
+  {
+    "hu": "HU08",
+    "title": "Gestionar servicios de belleza",
+    "file": "hu08_gestionar_servicios_de_belleza.svg"
+  },
+  {
+    "hu": "HU09",
+    "title": "Gestionar reservas",
+    "file": "hu09_gestionar_reservas.svg"
+  },
+  {
+    "hu": "HU10",
+    "title": "Gestionar productos e inventario",
+    "file": "hu10_gestionar_productos_e_inventario.svg"
+  },
+  {
+    "hu": "HU11",
+    "title": "Administrar categorías de productos",
+    "file": "hu11_administrar_categorias_de_productos.svg"
+  },
+  {
+    "hu": "HU12",
+    "title": "Consultar catálogo público de productos",
+    "file": "hu12_consultar_catalogo_publico_de_productos.svg"
+  },
+  {
+    "hu": "HU13",
+    "title": "Solicitar reserva de productos",
+    "file": "hu13_solicitar_reserva_de_productos.svg"
+  },
+  {
+    "hu": "HU14",
+    "title": "Gestionar solicitudes de reserva de productos",
+    "file": "hu14_gestionar_solicitudes_de_reserva_de_productos.svg"
+  },
+  {
+    "hu": "HU15",
+    "title": "Gestionar proveedores",
+    "file": "hu15_gestionar_proveedores.svg"
+  },
+  {
+    "hu": "HU16",
+    "title": "Registrar compras de productos",
+    "file": "hu16_registrar_compras_de_productos.svg"
+  },
+  {
+    "hu": "HU17",
+    "title": "Gestionar ventas",
+    "file": "hu17_gestionar_ventas.svg"
+  },
+  {
+    "hu": "HU18",
+    "title": "Registrar adelantos y pagos al personal",
+    "file": "hu18_registrar_adelantos_y_pagos_al_personal.svg"
+  },
+  {
+    "hu": "HU19",
+    "title": "Reportes de ventas e inventario",
+    "file": "hu19_reportes_de_ventas_e_inventario.svg"
+  },
+  {
+    "hu": "HU20",
+    "title": "Reportes de servicios y desempeño",
+    "file": "hu20_reportes_de_servicios_y_desempeno.svg"
+  },
+  {
+    "hu": "HU21",
+    "title": "Reporte de servicios por empleado",
+    "file": "hu21_reporte_de_servicios_por_empleado.svg"
+  }
+]

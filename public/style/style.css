@@ -1,0 +1,519 @@
+/*====================================================
+=                 ESTILOS GENERALES
+====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*====================================================
+=                 FONDO PRINCIPAL
+====================================================*/
+
+body{
+
+    min-height:100vh;
+
+    background-image:
+
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,.95) 0%,
+            rgba(255,255,255,.45) 20%,
+            rgba(255,255,255,0) 55%
+        ),
+
+        linear-gradient(
+            135deg,
+            #c60445 0%,
+            #dd7da4 50%,
+            #c60445 100%
+        );
+
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+}
+
+/*====================================================
+=            IMAGEN DECORATIVA LATERAL
+====================================================*/
+
+.imagen-lateral{
+
+    position:fixed;
+
+    top:0;
+    right:0;
+
+    width:700px;
+    height:100vh;
+
+    background-image:url('../img/bon.png');
+
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:contain;
+
+    opacity:.20;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+/*====================================================
+=            CONTENIDO PRINCIPAL
+====================================================*/
+
+.container{
+
+    position:relative;
+    z-index:10;
+
+}
+
+/*====================================================
+=                     LOGO
+====================================================*/
+
+.logo-container{
+
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+.logo-container img{
+
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,.7);
+
+    box-shadow:
+
+        0 0 25px rgba(255,255,255,.8),
+
+        0 0 45px rgba(214,51,132,.45);
+
+    transition:.4s;
+
+}
+
+.logo-container img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.titulo-salon{
+
+    margin-top:15px;
+
+    color:white;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    text-shadow:0 3px 10px rgba(0,0,0,.3);
+
+}
+
+.subtitulo-salon{
+
+    color:#ffe8f2;
+
+    font-style:italic;
+
+}
+
+/*====================================================
+=                  FORMULARIO
+====================================================*/
+
+#formulario{
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.15);
+
+}
+
+h3{
+
+    color:#c60445;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-weight:bold;
+
+}
+
+.form-group label{
+
+    color:#a0033c;
+
+    font-weight:bold;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    border:2px solid #ffc1da;
+
+    padding:12px;
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#c60445;
+
+    box-shadow:0 0 10px rgba(198,4,69,.25);
+
+}
+
+/*====================================================
+=                    BOTONES
+====================================================*/
+
+.btn-ingresar{
+
+    width:100%;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        45deg,
+        #ff69b4,
+        #c60445
+    );
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+}
+
+.btn-ingresar:hover{
+
+    background:linear-gradient(
+        45deg,
+        #c60445,
+        #8f0233
+    );
+
+    color:white;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(198,4,69,.4);
+
+}
+
+/*====================================================
+=                     BANNER
+====================================================*/
+.banner {
+    width: 1300px;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*====================================================
+=                  BARRA SUPERIOR
+====================================================*/
+
+.topbar{
+
+    margin-top:20px;
+
+    padding:18px 25px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/*====================================================
+=                 MENÚ LATERAL
+====================================================*/
+
+.sidebar{
+
+    background:rgba(255,255,255,.90);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    height:100%;
+
+}
+
+/* El menú permanece al lado del contenido y se compacta a una barra de iconos. */
+.panel-menu-col,
+.panel-content-col{
+    transition:flex-basis .25s ease, max-width .25s ease, width .25s ease;
+}
+
+body.menu-lateral-compacto .panel-menu-col{
+    flex:0 0 88px !important;
+    width:88px !important;
+    max-width:88px !important;
+}
+
+body.menu-lateral-compacto .panel-content-col{
+    flex:1 0 0% !important;
+    width:auto !important;
+    max-width:none !important;
+}
+
+body.menu-lateral-compacto .panel-menu-col .sidebar{
+    padding:18px 8px;
+}
+
+body.menu-lateral-compacto .panel-menu-col .menu-title,
+body.menu-lateral-compacto .panel-menu-col .menu-label{
+    display:none;
+}
+
+body.menu-lateral-compacto .panel-menu-col h5{
+    justify-content:center !important;
+}
+
+body.menu-lateral-compacto .panel-menu-col .btn-menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 6px;
+}
+
+body.menu-lateral-compacto .panel-menu-col .btn-menu i{
+    margin:0 !important;
+}
+
+body.menu-lateral-compacto .panel-menu-col .btn-menu:hover{
+    transform:translateY(-2px);
+}
+
+@media(max-width:991px){
+    body.menu-lateral-compacto .panel-menu-col{
+        flex-basis:88px !important;
+        max-width:88px !important;
+    }
+    body.menu-lateral-compacto .panel-content-col{
+        flex-basis:calc(100% - 88px) !important;
+        max-width:calc(100% - 88px) !important;
+    }
+}
+
+.sidebar h5{
+
+    color:#b30b4f;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+/*====================================================
+=               BOTONES DEL MENÚ
+====================================================*/
+
+.btn-menu{
+
+    display:block;
+
+    width:100%;
+
+    padding:12px 16px;
+
+    margin-bottom:10px;
+
+    text-decoration:none;
+
+    background:rgba(255,255,255,.75);
+
+    color:#a0033c;
+
+    border:2px solid rgba(255,255,255,.6);
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    transition:.25s ease-in-out;
+
+}
+
+.btn-menu:hover,
+.btn-menu.active{
+
+    background:linear-gradient(135deg, #c60445 0%, #dd7da4 100%);
+
+    color:white !important;
+
+    border-color:transparent;
+
+    transform:translateX(6px);
+
+    box-shadow:0 4px 12px rgba(198,4,69,.25);
+
+}
+
+.hover-scale{
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.hover-scale:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(198,4,69,.15) !important;
+}
+
+.banner{
+    width: 100%;
+    max-height: 180px;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+/*====================================================
+=                  CONTENIDO
+====================================================*/
+
+.content{
+
+    background:rgba(255,248,251,.90);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/*====================================================
+=                    FOOTER
+====================================================*/
+
+.footer{
+
+    margin-top:30px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:rgba(198,4,69,.90);
+
+    color:white;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+
+}
+
+/*====================================================
+=                RESPONSIVE
+====================================================*/
+
+@media(max-width:991px){
+
+    .imagen-lateral{
+
+        display:none;
+
+    }
+
+    .logo-container img{
+
+        width:140px;
+        height:140px;
+
+    }
+
+    .titulo-salon{
+
+        font-size:25px;
+
+    }
+
+    .sidebar{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+/*====================================================
+=            TRANSFORMACIÓN A MAYÚSCULAS
+====================================================*/
+input[type="text"]:not(.keep-case),
+input[type="search"]:not(.keep-case),
+textarea:not(.keep-case) {
+    text-transform: uppercase;
+}
+
+input[type="password"],
+input[type="email"],
+.keep-case {
+    text-transform: none !important;
+}
